@@ -1,0 +1,37 @@
+{
+  "name": "rental-marketplace-backend",
+  "version": "1.0.0",
+  "description": "Backend API for rental marketplace application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "kill-port": "powershell -ExecutionPolicy Bypass -File scripts/kill-port.ps1",
+    "predev": "powershell -ExecutionPolicy Bypass -File scripts/kill-port.ps1",
+    "test-mongodb": "node scripts/test-mongodb.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rental",
+    "marketplace",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "express-validator": "^7.0.1",
+    "cloudinary": "^1.41.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
+
